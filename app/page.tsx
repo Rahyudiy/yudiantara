@@ -37,7 +37,7 @@ export default function Home() {
           </h2>
         </div>
 
-        <div className="bg-[#F6F6F6] bg-no-repeat bg-contain w-full p-2 m-4 h-screen rounded-2xl  font-poppins px-15 py-20">
+        <div className="bg-[#F6F6F6] bg-no-repeat bg-contain w-full p-2 m-4 h-full rounded-2xl  font-poppins px-15 py-20">
           <h3 className="text-3xl">
             Design <br />& Code Execution
           </h3>
@@ -46,7 +46,9 @@ export default function Home() {
             turn ideas into clean, smooth interfaces that perform seamlessly
             across modern devices.
           </p>
-          <Slidder></Slidder>
+          <div className="py-20">
+            <Slidder></Slidder>
+          </div>
         </div>
       </main>
     </div>
