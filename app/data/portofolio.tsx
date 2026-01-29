@@ -13,4 +13,11 @@ export const portofolio = [
     description: "Modern photo studio booking experience.",
     link: "#",
   },
+  {
+    title: "udio",
+    alt: "Ignos Studio Website",
+    image: "/rahyudi.png",
+    description: "Modern photo studio booking experience.",
+    link: "#",
+  },
 ];

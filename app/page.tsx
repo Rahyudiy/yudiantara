@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import { Banner } from "./components/Banner";
 import { DetailComponent } from "./components/DetailComponent";
+import { Navbar } from "./components/Navbar";
 import { Slidder } from "./components/Slidder";
+import { motion } from "framer-motion";
+import { ArrowUp } from "lucide-react";
 
 export default function Home() {
   return (
@@ -15,7 +20,9 @@ export default function Home() {
                 <p>Available</p>
               </div>
             </div>
-            <p className="ml-[14vw]">Menu</p>
+            <div className="ml-[14vw]">
+              <Navbar></Navbar>
+            </div>
           </div>
           <div className="px-15 py-30 flex flex-col gap-10">
             <Banner></Banner>
@@ -46,9 +53,59 @@ export default function Home() {
             turn ideas into clean, smooth interfaces that perform seamlessly
             across modern devices.
           </p>
-          <div className="py-20">
+          <div className="pt-20">
             <Slidder></Slidder>
           </div>
+        </div>
+        <div className="bg-[#F6F6F6] bg-no-repeat bg-contain w-full p-2 m-4 h-full rounded-2xl  px-15 py-20">
+          <p className="text-[#000000] text-8xl mt-4 leading-20 text-center font-sfpro font-bold">
+            Let's do <br />
+            something
+            <br />
+            <span className="font-extralight font-sans tracking-tighter italic">
+              amazing
+            </span>{" "}
+            <br />
+            together
+          </p>
+
+          <p className="font-poppins uppercase text-center font-semibold text-sm my-20">
+            If you want to work with me,
+            <br />
+            collaborate, learn something new <br />
+            or just say hello
+          </p>
+          <p className="font-poppins text-[#7c7c7c] uppercase font-semibold text-center text-sm">
+            drop me a dm in direct
+          </p>
+          <a
+            href="https://www.instagram.com/ngurahyudiantaraa/"
+            target="_blank"
+            className="font-poppins text-3xl underline underline-offset-4 transition-opacity hover:opacity-70 text-center flex justify-center"
+          >
+            @ydntara
+          </a>
+          <p className="font-poppins text-[#7c7c7c] uppercase font-semibold text-center text-sm mt-10">
+            or send me a message
+          </p>
+          <a
+            href="mailto:gdengurahyudiantara@gmail.com"
+            target="_blank"
+            className="font-poppins text-3xl underline underline-offset-4 transition-opacity hover:opacity-70 text-center flex justify-center"
+          >
+            ngurahyudiantara@gmail.com
+          </a>
+          <motion.div
+            animate={{ y: [0, -12, 0] }}
+            transition={{
+              duration: 1.2,
+              ease: "easeInOut",
+              repeat: Infinity,
+            }}
+            className="flex justify-center"
+          >
+            <ArrowUp size={28} strokeWidth={1.5} />
+          </motion.div>
         </div>
       </main>
     </div>
