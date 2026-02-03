@@ -1,18 +1,19 @@
-"use client";
-
 import Image from "next/image";
 import { Banner } from "./components/Banner";
 import { DetailComponent } from "./components/DetailComponent";
+import { Footer } from "./components/Footer";
+import { MusicPlayer } from "./components/MusicPlayer";
 import { Navbar } from "./components/Navbar";
 import { Slidder } from "./components/Slidder";
-import { motion } from "framer-motion";
-import { ArrowUp } from "lucide-react";
 
 export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-white">
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center  py-4 px-16 ">
-        <div className="bg-[url('/vector-1.jpg')] bg-no-repeat bg-contain w-full p-2  h-fit  font-poppins">
+        <div
+          id="hero"
+          className="bg-[url('/vector-1.jpg')] bg-no-repeat bg-contain w-full p-2  h-fit  font-poppins"
+        >
           <div className="flex flex-row justify-between  w-full font-poppins">
             <div className="flex gap-20">
               <strong>Yudiantara</strong>
@@ -57,56 +58,17 @@ export default function Home() {
             <Slidder></Slidder>
           </div>
         </div>
-        <div className="bg-[#F6F6F6] bg-no-repeat bg-contain w-full p-2 m-4 h-full rounded-2xl  px-15 py-20">
-          <p className="text-[#000000] text-8xl mt-4 leading-20 text-center font-sfpro font-bold">
-            Let's do <br />
-            something
-            <br />
-            <span className="font-extralight font-sans tracking-tighter italic">
-              amazing
-            </span>{" "}
-            <br />
-            together
-          </p>
-
-          <p className="font-poppins uppercase text-center font-semibold text-sm my-20">
-            If you want to work with me,
-            <br />
-            collaborate, learn something new <br />
-            or just say hello
-          </p>
-          <p className="font-poppins text-[#7c7c7c] uppercase font-semibold text-center text-sm">
-            drop me a dm in direct
-          </p>
-          <a
-            href="https://www.instagram.com/ngurahyudiantaraa/"
-            target="_blank"
-            className="font-poppins text-3xl underline underline-offset-4 transition-opacity hover:opacity-70 text-center flex justify-center"
-          >
-            @ydntara
-          </a>
-          <p className="font-poppins text-[#7c7c7c] uppercase font-semibold text-center text-sm mt-10">
-            or send me a message
-          </p>
-          <a
-            href="mailto:gdengurahyudiantara@gmail.com"
-            target="_blank"
-            className="font-poppins text-3xl underline underline-offset-4 transition-opacity hover:opacity-70 text-center flex justify-center"
-          >
-            ngurahyudiantara@gmail.com
-          </a>
-          <motion.div
-            animate={{ y: [0, -12, 0] }}
-            transition={{
-              duration: 1.2,
-              ease: "easeInOut",
-              repeat: Infinity,
-            }}
-            className="flex justify-center"
-          >
-            <ArrowUp size={28} strokeWidth={1.5} />
-          </motion.div>
+        <div className="bg-[#F6F6F6] bg-no-repeat bg-contain w-full p-2 h-full rounded-2xl  px-15 py-20">
+          <Footer></Footer>
         </div>
+        <div className="">
+          <div className="flex">
+            <a href="">Instagram</a>
+            <a href="">Threads</a>
+            <a href="">Linkedin</a>
+          </div>
+        </div>
+        <MusicPlayer></MusicPlayer>
       </main>
     </div>
   );
