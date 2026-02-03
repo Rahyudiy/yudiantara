@@ -8,9 +8,9 @@ interface Props {
 
 export const Card = ({ alt, title, image, description, link }: Props) => {
   return (
-    <div className="min-w-full p-4 bg-white rounded-md h-105">
+    <div className="min-w-full p-4 bg-white rounded-md h-fit  ">
       <a href="">
-        <div className="relative w-full h-65 rounded-sm overflow-hidden">
+        <div className="relative w-full h-80 rounded-sm overflow-hidden">
           {/* Image */}
           <div
             className="absolute inset-0 bg-cover bg-center"

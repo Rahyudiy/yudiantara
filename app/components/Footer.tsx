@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <footer className="">
       <div className="">
-        <p className="text-[#000000] text-8xl mt-4 leading-20 text-center font-sfpro font-bold">
+        <p className="text-[#000000] md:text-8xl text-6xl mt-4 md:leading-20 text-center font-sfpro font-bold">
           Let's do <br />
           something
           <br />
@@ -30,7 +30,7 @@ export const Footer = () => {
         <a
           href="https://www.instagram.com/ngurahyudiantaraa/"
           target="_blank"
-          className="font-poppins text-3xl underline underline-offset-4 transition-opacity hover:opacity-70 text-center flex justify-center"
+          className="font-poppins md:text-3xl text-xl underline underline-offset-4 transition-opacity hover:opacity-70 text-center flex justify-center"
         >
           @ydntara
         </a>
@@ -40,7 +40,7 @@ export const Footer = () => {
         <a
           href="mailto:gdengurahyudiantara@gmail.com"
           target="_blank"
-          className="font-poppins text-3xl underline underline-offset-4 transition-opacity hover:opacity-70 text-center flex justify-center"
+          className="font-poppins md:text-3xl text-xl underline underline-offset-4 transition-opacity hover:opacity-70 text-center flex justify-center"
         >
           ngurahyudiantara@gmail.com
         </a>

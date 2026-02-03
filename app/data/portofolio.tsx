@@ -2,7 +2,7 @@ export const portofolio = [
   {
     title: "Altera",
     alt: "Altera Project",
-    image: "/rahyudi.png",
+    image: "/project-1.png",
     description: "Lorem ipsum dolor sit amet consectetur.",
     link: "#",
   },
