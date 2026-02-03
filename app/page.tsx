@@ -18,7 +18,13 @@ export default function Home() {
             <div className="flex gap-20">
               <strong>Yudiantara</strong>
               <div className="text-[#20BB3B]">
-                <p>Available</p>
+                <a href="" className=" flex justify-center gap-2 items-center">
+                  <span className="relative flex h-2 w-2">
+                    <span className="absolute inline-flex h-full w-full rounded-full bg-[#20BB3B] opacity-75 animate-ping"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#20BB3B]"></span>
+                  </span>
+                  <p>Available</p>
+                </a>
               </div>
             </div>
             <div className="ml-[14vw]">
@@ -62,10 +68,19 @@ export default function Home() {
           <Footer></Footer>
         </div>
         <div className="">
-          <div className="flex">
-            <a href="">Instagram</a>
-            <a href="">Threads</a>
-            <a href="">Linkedin</a>
+          <div className="flex gap-2 font-poppins">
+            <a href="" className=" hover:opacity-70 duration-150">
+              #Instagram
+            </a>
+            <a href="" className=" hover:opacity-70 duration-150">
+              #Threads
+            </a>
+            <a href="" className=" hover:opacity-70 duration-150">
+              #Linkedin
+            </a>
+            <a href="" className=" hover:opacity-70 duration-150">
+              #Youtube
+            </a>
           </div>
         </div>
         <MusicPlayer></MusicPlayer>
