@@ -1,23 +1,23 @@
 export const portofolio = [
   {
-    title: "Altera",
-    alt: "Altera Project",
+    title: "Bhuanaalit - Travel",
+    alt: "Bhuanaalit - Travel",
     image: "/project-1.png",
     description: "Lorem ipsum dolor sit amet consectetur.",
-    link: "#",
+    link: "https://bhuanaalit.vercel.app/",
   },
   {
-    title: "Ignos Studio",
-    alt: "Ignos Studio Website",
-    image: "/rahyudi.png",
+    title: "Mamaku Studio - Company Profile",
+    alt: "Mamaku studio Website",
+    image: "/project-2.png",
     description: "Modern photo studio booking experience.",
-    link: "#",
+    link: "https://mamakustudio.com/",
   },
   {
-    title: "udio",
-    alt: "Ignos Studio Website",
+    title: "Chat n'rechat - Company Profile",
+    alt: "Chat n'rechat website",
     image: "/rahyudi.png",
     description: "Modern photo studio booking experience.",
-    link: "#",
+    link: "https://rahyudiy.github.io/Chat-N-rechat/",
   },
 ];

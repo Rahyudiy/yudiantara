@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Banner = () => {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center md:gap-2 gap-4  ">
       <Image
         src="/rahyudi.png"
         width={500}

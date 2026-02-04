@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-white">
       <main
-        className="flex min-h-screen w-full max-w-3xl flex-col items-center py-4 md:px-16 px-6"
+        className="flex min-h-screen w-full max-w-3xl flex-col items-center py-4 md:px-16 px-4"
         role="main"
       >
         {/* HERO / HEADER */}
@@ -19,14 +19,16 @@ export default function Home() {
           className="bg-[url('/vector-1.jpg')] bg-no-repeat md:bg-contain bg-cover w-full p-2 h-fit font-poppins"
         >
           <div className="flex flex-row justify-between w-full">
-            <div className="flex gap-[1vw] items-center">
+            <div className="flex md:gap-[1vw] gap-[5vw] items-center">
               {/* H1 — PRIMARY SEO TARGET */}
-              <h1 className="font-bold text-base">Ngurah Yudiantara</h1>
+              <h1 className="font-bold md:text-base text-xs">
+                Ngurah Yudiantara
+              </h1>
 
               <div className="text-[#20BB3B]">
                 <a
                   href="https://www.linkedin.com/in/ngurah-yudiantara/"
-                  className="flex justify-center gap-2 items-center"
+                  className="flex justify-center gap-2 items-center md:text-base text-xs"
                   aria-label="Availability status: Available for work"
                 >
                   <span className="relative flex h-2 w-2" aria-hidden="true">
@@ -53,7 +55,7 @@ export default function Home() {
 
         {/* PROFILE IMAGE */}
         <section
-          className="w-full h-fit flex flex-col mt-4 md:mt-0 items-end font-poppins"
+          className="w-full h-fit flex flex-col mt-4 md:mt-2 items-end font-poppins"
           aria-labelledby="profile-heading"
         >
           <figure className="block overflow-hidden rounded-2xl">
@@ -69,7 +71,7 @@ export default function Home() {
 
           <h2
             id="profile-heading"
-            className="md:px-8 px-2 md:py-3 py-7 font-semibold md:text-base text-[10px] -mt-[5dvh]"
+            className="md:px-8 px-2 md:py-3 py-4 font-semibold md:text-base text-[10px] -mt-[5dvh]"
           >
             Yudiantara
           </h2>
@@ -77,8 +79,9 @@ export default function Home() {
 
         {/* PROJECTS / WORK */}
         <section
-          className="bg-[#F6F6F6] bg-no-repeat bg-contain w-full p-2 -m-3 md:m-4 h-full rounded-2xl font-poppins md:px-15 px-5 py-20"
+          className="bg-[#F6F6F6] bg-no-repeat bg-contain w-full p-2 m-1 md:m-4 h-full rounded-2xl font-poppins md:px-15 px-5 py-20"
           aria-labelledby="work-heading"
+          id="works"
         >
           <h2 id="work-heading" className="text-3xl">
             Design <br /> & Code Execution
@@ -97,7 +100,7 @@ export default function Home() {
 
         {/* FOOTER SECTION */}
         <footer
-          className="bg-[#F6F6F6] bg-no-repeat bg-contain w-full p-2 h-screen rounded-2xl md:px-15 px-5 py-20 mt-8 md:mt-0"
+          className="bg-[#F6F6F6] bg-no-repeat bg-contain w-full p-2 h-full rounded-2xl md:px-15 px-5 py-20 mt-3 md:mt-2"
           aria-labelledby="footer-heading"
         >
           <h2 id="footer-heading" className="sr-only">
@@ -108,7 +111,7 @@ export default function Home() {
 
         {/* SOCIAL LINKS */}
         <section
-          className="flex gap-2 font-poppins text-sm py-10"
+          className="flex gap-2 font-poppins text-sm md:text-base pt-10 pb-25"
           aria-label="Social media links"
           id="contact"
         >

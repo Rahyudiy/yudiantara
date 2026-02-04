@@ -71,8 +71,6 @@ export const MusicPlayer = () => {
           className="w-20 h-20"
         ></Image>
       </motion.button>
-
-      <p className="text-sm text-gray-600">{playlist[currentTrack].title}</p>
     </div>
   );
 };

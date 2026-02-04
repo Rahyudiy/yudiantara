@@ -4,12 +4,41 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 
+const navLinks = [
+  { label: "Home", href: "#hero" },
+  { label: "Projects", href: "#works" },
+  { label: "Blog", href: "/" },
+  { label: "Social Media", href: "#contact" },
+];
+
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
 
+  const handleScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    if (!href.startsWith("#")) return;
+
+    e.preventDefault();
+
+    const targetId = href.replace("#", "");
+    const target = document.getElementById(targetId);
+
+    target?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+
+    setOpen(false);
+  };
+
   return (
     <nav>
-      <button onClick={() => setOpen(true)} className="font-bold">
+      <button
+        onClick={() => setOpen(true)}
+        className="font-bold md:text-base text-xs"
+      >
         Menu
       </button>
 
@@ -60,17 +89,21 @@ export const Navbar = () => {
                   },
                 }}
               >
-                {["Home", "Explore", "Stories", "About"].map((item) => (
+                {navLinks.map((item) => (
                   <motion.div
-                    key={item}
+                    key={item.label}
                     variants={{
                       hidden: { opacity: 0, y: 20 },
                       visible: { opacity: 1, y: 0 },
                     }}
                     transition={{ duration: 0.4, ease: "easeOut" }}
                   >
-                    <Link href={item} onClick={() => setOpen(false)}>
-                      {item}
+                    <Link
+                      href={item.href}
+                      onClick={(e) => handleScroll(e, item.href)}
+                      className="hover:opacity-70 transition-opacity"
+                    >
+                      {item.label}
                     </Link>
                   </motion.div>
                 ))}
