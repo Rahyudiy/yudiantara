@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align="center">
+  <img src="./public/favicon.ico" alt="Ngurah Yudiantara Logo" width="64" height="64" />
+</p>
 
-## Getting Started
+<h1 align="center">Ngurah Yudiantara</h1>
 
-First, run the development server:
+<p align="center">
+  Frontend Developer & UI/UX Designer  
+  <br />
+  Crafting clean, modern, and human-centered digital experiences
+</p>
+
+<p align="center">
+  <a href="https://yudiantara.vercel.app">🌐 Portfolio</a> ·
+  <a href="https://www.linkedin.com/in/ngurah-yudiantara/">LinkedIn</a> ·
+  <a href="https://github.com/Rahyudiy">GitHub</a>
+</p>
+
+---
+
+## 👋 About Me
+
+Hi, I’m **Ngurah Yudiantara**, a **Frontend Developer and UI/UX Designer** based in Indonesia.  
+I design intuitive user experiences and bring them to life with clean, performant, and scalable frontend code.
+
+I enjoy working at the intersection of **design and engineering**, turning ideas into smooth, meaningful digital interfaces.
+
+---
+
+## 🧠 What I Do
+
+- UI/UX Design (User-centered, clean, minimal)
+- Frontend Development
+- Responsive Web Interfaces
+- Design → Code Execution
+- Performance & SEO-friendly websites
+
+---
+
+## 🛠 Tech Stack
+
+**Frontend**
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+
+**Design**
+- Figma
+- Design Systems
+- Prototyping & Usability
+
+**Other**
+- Git & GitHub
+- SEO Best Practices
+- Modern Web Standards
+
+---
+
+## 📸 Preview
+
+Live website:  
+👉 **https://yudiantara.vercel.app**
+
+---
+
+## 📂 Project Purpose
+
+This repository contains the source code for my **personal portfolio website**, built to:
+
+- Showcase real projects and skills
+- Represent my design + development workflow
+- Serve as a professional digital identity
+- Apply best practices in modern frontend development
+
+---
+
+## 🚀 Getting Started
 
 ```bash
+git clone https://github.com/Rahyudiy/yudiantara.git
+cd yudiantara
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
