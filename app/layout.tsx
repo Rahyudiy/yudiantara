@@ -31,6 +31,8 @@ export const metadata: Metadata = {
   description:
     "Ngurah Yudiantara is a Frontend Developer and UI UX Designer crafting clean, modern, and human-centered digital experiences with modern web technologies.",
 
+  applicationName: "Ngurah Yudiantara",
+
   keywords: [
     "Ngurah Yudiantara",
     "Yudiantara",
@@ -53,6 +55,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+
+  icons: {
+    icon: [{ url: "/favicon.ico", sizes: "any" }],
+    apple: "/apple-touch-icon.png",
+  },
+
+  manifest: "/site.webmanifest",
 
   openGraph: {
     title: "Ngurah Yudiantara — Frontend Developer & UI UX Designer",
