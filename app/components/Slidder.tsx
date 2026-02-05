@@ -28,7 +28,7 @@ export const Slidder = () => {
 
       <button
         onClick={() => setIndex((prev) => (prev + 1) % portofolio.length)}
-        className="absolute bottom-2 right-2 text-xs opacity-50 hover:opacity-100"
+        className="absolute bottom-2 right-5 text-sm opacity-50 hover:opacity-100 duration-200"
       >
         Next
       </button>

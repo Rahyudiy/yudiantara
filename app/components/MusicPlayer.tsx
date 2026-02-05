@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 const playlist = [
+  { title: "senopati in the rain", src: "/music/Senopati-in-the-Rain.mp3" },
   { title: "love", src: "/music/love-kendricklamar.mp3" },
   { title: "good days", src: "/music/Good-Days.mp3" },
 ];

@@ -9,7 +9,7 @@ interface Props {
 export const Card = ({ alt, title, image, description, link }: Props) => {
   return (
     <div className="min-w-full p-4 bg-white rounded-md h-full  ">
-      <a href={link}>
+      <a href={link} target="_blank" rel="noopener noreferrer">
         <div className="relative w-full h-70 rounded-sm overflow-hidden">
           {/* Image */}
           <div
