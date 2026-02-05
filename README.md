@@ -1,5 +1,6 @@
 <p align="center">
-  <img src="./public/favicon.ico" alt="Ngurah Yudiantara Logo" width="64" height="64" />
+  <img src="app/favicon.ico
+    " alt="Ngurah Yudiantara Logo" width="64" height="64" />
 </p>
 
 <h1 align="center">Ngurah Yudiantara</h1>
