@@ -1,3 +1,4 @@
+import { getProjects } from "@/lib/get-projects";
 import Image from "next/image";
 import { Banner } from "./components/Banner";
 import { DetailComponent } from "./components/DetailComponent";
@@ -6,7 +7,9 @@ import { MusicPlayer } from "./components/MusicPlayer";
 import { Navbar } from "./components/Navbar";
 import { Slidder } from "./components/Slidder";
 
-export default function Home() {
+export default async function Home() {
+  const projects = await getProjects();
+
   return (
     <div className="flex min-h-screen items-center justify-center bg-white">
       <main
@@ -94,7 +97,7 @@ export default function Home() {
           </p>
 
           <div className="pt-20">
-            <Slidder />
+            <Slidder projects={projects} />
           </div>
         </section>
 

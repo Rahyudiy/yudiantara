@@ -1,20 +1,26 @@
 interface Props {
   alt: string;
   title: string;
-  image: string;
+  image_url: string;
   description: string;
-  link: string;
+  live_url: string;
 }
 
-export const Card = ({ alt, title, image, description, link }: Props) => {
+export const Card = ({
+  alt,
+  title,
+  image_url,
+  description,
+  live_url,
+}: Props) => {
   return (
     <div className="min-w-full p-4 bg-white rounded-md h-full  ">
-      <a href={link} target="_blank" rel="noopener noreferrer">
+      <a href={live_url} target="_blank" rel="noopener noreferrer">
         <div className="relative w-full h-70 rounded-sm overflow-hidden">
           {/* Image */}
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${image})` }}
+            style={{ backgroundImage: `url(${image_url})` }}
             aria-label={alt}
           />
 
