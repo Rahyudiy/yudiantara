@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { getProjects } from "@/lib/get-projects";
 import Image from "next/image";
 import { Banner } from "./components/Banner";
